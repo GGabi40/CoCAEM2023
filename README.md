@@ -24,7 +24,7 @@
 <p>In this project I use my knowledge about webpack, a static module bundler for JavaScript applications. That make your application usable in a web browser.</p>
 
 <br>
-<p>👀 You can watch this project online: <a href="https://ggabi40.github.io/CoCAEM2023" target="_blank">CLICK HERE</a>!</p>
+<p>👀 You can watch this project online: <a href="https://ggabi40.github.io/CoCAEM2023">CLICK HERE</a>!</p>
 
 <br>
-<p>Desenvolved with ♥️ by <a href="https://ggabi40.github.io/linktree" target="_blank">GGabi40</a>.</p>
+<p>Desenvolved with ♥️ by <a href="https://ggabi40.github.io/linktree">GGabi40</a>.</p>

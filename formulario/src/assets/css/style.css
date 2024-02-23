@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600&family=Montserrat:wght@400;600&display=swap');
+
+/*
+font-family: 'Bebas Neue', cursive;
+font-family: 'Inter', sans-serif;
+font-family: 'Montserrat', sans-serif;
+ */
+
+:root {
+    --gap: 15px;
+    --sombra-input: rgba(120, 0, 137, 0.51);
+    --background-input: #D9D9D9;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+
+    scroll-behavior: smooth;
+    /* background: url(../img/rosario-city/monumento.svg) center no-repeat;
+    background-size: cover; */
+}
+
+body {
+    font-family: 'Inter', 'Open Sans', sans-serif;
+    min-height: 100%;
+    background: linear-gradient(-160deg,
+    #151d1b,
+    #0f0d1a,
+    #160416);
+}
+
+h1 {
+    font-size: 3rem;
+    color: white;
+    font-family: 'Bebas Neue', 'Open Sans', sans-serif;
+    font-weight: 500;
+    text-align: center;
+
+    margin: 20px;
+    margin-top: 5px;
+}
+
+h2 {
+    font-family: 'Inter', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+label, legend, p {
+    font-size: 1.4rem;
+    display: block;
+
+    margin-bottom: 12px;
+}
+
+input {
+    width: 80%;
+    height: 20px;
+    padding: 4px;
+    margin-top: 3px;
+    background: var(--background-input);
+    
+    border-radius: 8px;
+    border: 1px solid #000000;
+}
+
+input:focus {
+    box-shadow: 3px 4px 6px var(--sombra-input);
+    background-color: white;
+    padding-left: 10px;
+}
+
+input[type="radio"] {
+    width: 60px;
+}
+
+input[type="radio"]:focus {
+    box-shadow: none;
+}
+
+#attention {
+    font-size: 1.2rem;
+    border-radius: 8px;
+    padding: 6px;
+
+    background-color: rgba(255, 255, 0, 0.342);
+    display: none;
+}
+
+#attentionCuota {
+    display: block;
+    font-size: 1.2rem;
+    border-radius: 8px;
+
+    background-color: rgba(255, 255, 0, 0.342);
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+}
+
+fieldset {
+    border: none;
+    margin-top: 8px;
+}
+
+select {
+    width: 80%;
+    height: 25px;
+    padding: 4px;
+    margin-top: 3px;
+    background: var(--background-input);
+    
+    border-radius: 8px;
+    border: 1px solid #000000;
+}
+
+option {
+    background-color: white;
+}
+
+#member {
+    width: 92%;
+}
+
+.contain-login a:hover{
+    color: black;
+}
+
+/* Formulario */
+.formulario-inscripcion {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.formulario-inscripcion h2 {
+    margin-top: 10px;
+    font-size: 1.8rem;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+
+    display: grid;
+    grid-column-end: span 2;
+
+}
+
+.input--comprobante {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    gap: var(--gap);
+}
+
+.formulario {
+    background-color: white;
+
+    border-radius: 18px;
+    max-width: 30%;
+    min-width: 280px;
+    margin: 10px auto;
+    padding: 20px;
+}
+
+.req {
+    color: red;
+}
+
+#width-complete {
+    grid-column: 3 / 1;
+}
+
+#input--mail {
+    width: 92%;
+}
+
+#faces-member {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.member-sociedad {
+    width: 80%;
+    display: block;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+#submit {
+    display: block;
+    margin: 10px auto;
+    height: 60px;
+    border-radius: 8px;
+
+    font-size: 800;
+
+    transition: 0.2s ease-in-out;
+}
+
+#submit:hover {
+    cursor: pointer;
+    box-shadow: 1px 1px 6px gray;
+    border: 1px solid black;
+}
+
+
+/* QR GENERATOR */
+
+.QRgenerator, .QRgenerator img {
+    text-align: center;
+}
+
+.QRgenerator img {
+    width: 150px;
+    height: 150px;
+}
+
+.responseQR.success {
+    background-color: green;
+    color: white;
+    font-weight: 800;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.responseQR.error {
+    background-color: red;
+    color: white;
+    font-weight: 800;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+/* Footer */
+#footer {
+    position: relative;
+
+    margin-top: auto;
+    width: 100%;
+
+    background: linear-gradient(90deg, 
+    #47407B 15.2%, 
+    #5B4C7D 31.78%, 
+    #744D77 59.54%, 
+    #774D7A 80.2%);
+
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.footer-cocaem {
+    box-sizing: border-box;
+    height: 120px;
+    margin-top: auto;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contain-logos {
+    display: flex;
+    padding-top: 8px;
+    justify-content: space-around;
+}
+
+.contain-logos img {
+    max-height: 80px;
+    max-width: 80px;
+}
+
+.white-bg-logo {
+    display: flex;
+    background-color: white;
+    max-height: 80px;
+    max-width: 80px;
+    border-radius: 100%;
+    box-shadow: 1px 1px 6px black;
+}
+
+.other-logos {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.contain-social-media {
+    display: flex;
+    flex-direction: column;
+}
+
+.contain-social-media img {
+    max-height: 30px;
+    width: auto;
+    filter: invert(100%);
+
+    margin-right: 10px;
+}
+
+.ig, .map, .mail {
+    display: flex;
+    font-size: 1.3rem;
+}
+
+.ig a, .map a, .mail a {
+    display: flex;
+    align-items: center;
+    color: white;
+
+    transition: 0.2s;
+}
+
+.ig a:hover, .map a:hover, .mail a:hover {
+    transform: scale(1.1);
+}
+
+.mail img {
+    width: 30px;
+}
+
+.ig a:visited {
+    color: white;
+}
+
+.ggabi {
+    position: absolute;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    text-align: center;
+}
+
+#ggabi-footer {
+    font-size: 1.3rem;
+    margin: 5px;
+}
+
+.ggabi a {
+    text-decoration: underline;
+}
+
+.ggabi a:visited {
+    color: white;
+}
+
+.ggabi span {
+    color: red;
+}
+
+/* MEDIA QUERY */
+
+@media (max-width: 825px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    .ig span, .map span, .mail span {
+        font-size: 1.1rem;
+    }
+
+    .contain-logos {
+        padding-top: 18px;
+    }
+    
+    .contain-logos img {
+        max-height: 60px;
+        max-width: 60px;
+    }
+    
+    .white-bg-logo {
+        max-height: 60px;
+        max-width: 60px;
+    }
+
+    .contain-social-media {
+        margin-top: 6px;
+    }
+}
+
+@media (max-width: 753px) {
+    h1 {
+        font-size: 3.2rem;
+    }
+
+    .contain-all-logo {
+        display: none;
+    }
+
+    .contain-logos-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .contain-logos-mobile img {
+        height: auto;
+        width: 70px;
+    }
+
+    .logo-mobile {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+
+    .title-mobile {
+        text-align: center;
+        margin: 0 3%;
+    }
+
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2.8rem;
+    }
+    p {
+        font-size: 1.5rem;
+    }
+
+    .ig span, .map span, .mail span {
+        font-size: 0.8rem;
+    }
+    
+    .contain-logos img {
+        max-height: 50px;
+        max-width: 50px;
+    }
+    
+    .white-bg-logo {
+        max-height: 50px;
+        max-width: 50px;
+    }
+}
+
+@media (max-width: 383px) {
+    h1 {
+        font-size: 2.6rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    .footer-cocaem {
+        height: 100px;
+    }
+
+    .contain-social-media img {
+        max-height: 25px;
+    }
+
+    .ig span, .map span, .mail span {
+        display: none;
+    }
+    
+    .contain-logos img {
+        max-height: 50px;
+        max-width: 50px;
+    }
+    
+    .white-bg-logo {
+        max-height: 50px;
+        max-width: 50px;
+    }
+
+    #ggabi-footer {
+        font-size: 1.1rem;
+        margin: 2px;
+    }
+}

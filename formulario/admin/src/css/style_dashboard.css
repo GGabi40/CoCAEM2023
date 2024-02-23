@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600&family=Montserrat:wght@400;600&family=Source+Sans+3&display=swap');
+
+/*
+font-family: 'Bebas Neue', cursive;
+font-family: 'Inter', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Source Sans 3', sans-serif;
+ */
+
+:root {
+    --gap: 15px;
+    --alrededor-letras: rgb(49, 155, 177);
+    --background-menu-color: rgb(39, 0, 39);
+    --container-color: rgba(255, 255, 255, 0.637);
+    --caja-total: rgb(151, 222, 235);
+    --num-inscriptos-total: rgb(163, 243, 163);
+    --num-paneles-cientifico: rgb(241, 157, 241);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', 'Open Sans', sans-serif;
+    min-height: 100vh;
+    background-color: rgba(98, 59, 138, 0.452);
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    font-size: 3.5rem;
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 600;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--background-menu-color);
+
+    gap: var(--gap);
+
+    flex-flow: column;
+    height: 100%;
+    left: 0;
+    overflow-y: auto;
+    position: fixed;
+    text-align: right;
+    top: 0;
+    padding-right: 10px;
+    width: 28%;
+
+    font-family: 'Montserrat', cursive;
+    z-index: 99;
+}
+
+header .top {
+    -moz-flex-grow: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+}
+
+#nav i {
+    color: white;
+    margin-left: 2.3rem;
+}
+
+header a,
+header h1 {
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 8px;
+}
+
+header .img-foto {
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+}
+
+header img {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+}
+
+header a {
+    font-size: 1.3rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+ul {
+    list-style: none;
+}
+
+ul a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    line-height: 4rem;
+}
+
+.toggle {
+    display: none;
+}
+
+#nav {
+    margin-top: 2rem;
+}
+
+#nav ul li a span {
+    position: relative;
+    display: block;
+    font-size: 0.8em;
+}
+
+#nav ul li a:hover {
+    background-color: rgb(94, 37, 148);
+    border-radius: 10px;
+    height: 10px;
+}
+
+#desenvolvedBy {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.container {
+    margin: 30px;
+    margin-left: 30%;
+    background-color: var(--container-color);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.container i {
+    color: black;
+}
+
+.caja {
+    padding: 15px;
+    padding-top: 0;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin: 1rem 8%;
+    height: auto;
+    display: grid;
+    place-items: center;
+    border: 1px solid black;
+
+    box-shadow: inset 2px -10px 6px rgba(0, 0, 0, 0.425);
+}
+
+.numero-inscriptos-total {
+    background-color: var(--caja-total);
+}
+
+.contain-numero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 10px;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.numero-inscripto-texto {
+    font-size: 1.8rem;
+    width: 100%;
+    background-color: white;
+    padding: 5px;
+    border-radius: 6px;
+    margin-top: 0;
+    border: 1px solid black;
+}
+
+.num-inscriptos {
+    background-color: var(--num-inscriptos-total);
+}
+
+.num-paneles-cientificos {
+    background-color: var(--num-paneles-cientifico);
+}
+
+.numero {
+    margin-top: 8px;
+}
+
+/* Inscriptos */
+
+.contain-filtro-tabla {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contain-filtro-tabla label {
+    font-size: 1.3rem;
+}
+
+.contain-filtro-tabla input, .contain-filtro-tabla button {
+    padding: 3px;
+    padding-left: 5px;
+}
+
+.contain-filtro-tabla input {
+    width: 50%;
+}
+
+.filtro {
+    margin-top: 1.3rem;
+}
+
+.filtro select {
+    padding: 3px;
+    max-width: 300px;
+}
+
+.tabla-centralizada {
+    display: grid;
+    place-items: center;
+}
+
+.table-container {
+    overflow-x: auto;
+    overflow-y: auto;
+    border: 1px dotted black;
+    padding: 1.2rem;
+    margin-top: 1rem;
+}
+
+table {
+    width: 100%;
+    max-height: 1vh;
+    margin-top: 1.6rem;
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: left;
+    border: 1px solid #000;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+}
+
+#tablaInscriptos {
+    background-color: rgba(117, 201, 176, 0.322);
+}
+
+#tablaPaneles {
+    background-color: rgba(241, 157, 241, 0.452);
+}
+
+table thead tr {
+    position: -webkit-sticky;
+    position: sticky;
+    background-color: rgb(241 157 241);
+    top: 0;
+    z-index: 8;
+}
+
+#qr {
+    margin-right: 50%;
+}
+
+@media (min-width: 901px) {
+    .table-container {
+        overflow-x: scroll;
+        max-width: 100%;
+        max-height: 600px;
+    }
+}
+
+@media (max-width: 900px) {
+    table {
+        min-width: 600px;
+        font-size: 1.2rem;
+    }
+
+    .table-container {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    table {
+        max-height: 0.5vh;
+    }
+
+    .header {
+        display: none;
+    }
+
+    .toggle {
+        display: grid;
+        place-items: center;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 9999;
+    }
+
+    .toggle button {
+        position: absolute;
+        left: 10px;
+        z-index: 99;
+        top: 17px;
+        padding: 6px;
+        border-radius: 8px;
+        background: var(--background-menu-color);
+        cursor: pointer;
+    }
+
+    .toggle button svg {
+        fill: #fff;
+    }
+
+    .header.slide-in {
+        display: block;
+        /* Asegura que el header esté visible */
+        transform: translateX(-100%);
+        /* Mueve el header desde el borde izquierdo hacia la derecha */
+        transition: transform 0.3s ease-in;
+    }
+
+    /* Estilo del contenedor principal cuando se abre el menú */
+    .header.open {
+        transform: translateX(0px);
+        transition: transform 0.3s ease;
+    }
+
+    .toggle.open {
+        transform: translateX(20rem);
+        transition: transform 0.3s ease;
+    }
+
+    .container {
+        margin-left: 15%;
+    }
+
+    /* container Homer */
+    .contain-numero {
+        grid-template-columns: 1fr;
+    }
+
+    .numero-inscripto-texto {
+        font-size: 1.8rem;
+    }
+
+    .numero {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 510px) {
+    header {
+        width: 80%;
+        justify-content: space-between;
+    }
+
+    .toggle {
+        display: block;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 9999;
+    }
+
+    .toggle button {
+        position: absolute;
+        left: 10px;
+        z-index: 99;
+        top: 17px;
+        padding: 6px;
+        border-radius: 8px;
+        background: var(--background-menu-color);
+        cursor: pointer;
+    }
+
+    .toggle button svg {
+        fill: #fff;
+    }
+
+    .header.slide-in {
+        display: block;
+        transform: translateX(-100%);
+        /* Mueve el header desde el borde izquierdo hacia la derecha */
+        transition: transform 0.3s ease-in;
+    }
+
+    /* Estilo del contenedor principal cuando se abre el menú */
+    .header.open {
+        transform: translateX(0px);
+        transition: transform 0.3s ease;
+    }
+
+    .toggle.open {
+        transform: translateX(20rem);
+        transition: transform 0.3s ease;
+    }
+
+    .numero-inscripto-texto {
+        font-size: 1.6rem;
+    }
+
+    .numero {
+        font-size: 2.5rem;
+    }
+
+    .home-grafico {
+        display: none;
+    }
+
+    .table-container {
+        max-height: 400px;
+        overflow-x: scroll;
+        max-width: 100%;
+        max-height: 400px;
+    }
+}

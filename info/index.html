@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>+ Info | CoCAEM 2023</title>
+
+    <link rel="website icon" href="../src/assets/img/logos/Logo CoCAEM.png">
+    <link rel="stylesheet" href="../src/assets/css/style-v3.css">
+    <link rel="stylesheet" href="./src/assets/css/infoStyle.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+</head>
+
+<body>
+    <header>
+
+        <!-- Mobile -->
+        <div class="contain-logos-mobile">
+            <div class="logo-mobile">
+                <a href="#top"><img src="../src/assets/img/logos/Logo CoCAEM.png" alt="Logo del CoCAEM"></a>
+                <a href="https://acresrosario.com" target="_blank"><img src="../src/assets/img/logos/Logo ACRES.png"
+                        alt="Logo de ACRES"></a>
+                <a href="https://www.instagram.com/faces.virtual/" target="_blank"><img
+                        src="../src/assets/img/logos/Logo FACES.png" alt="Logo de FACES"></a>
+            </div>
+
+            <div class="title-mobile">
+                <h1><span>XXXIV</span> Congreso Científico Argentino de Estudiantes de Medicina | <span>CoCAEM</span>
+                </h1>
+                <h2>Rosario 2023</h2>
+            </div>
+        </div>
+
+        <!-- Web -->
+        <div class="contain-all-logo">
+
+            <div class="page-title">
+                <div class="contain-logo">
+                    <a href="#top"><img src="../src/assets/img/logos/Logo CoCAEM.png" alt="Logo del CoCAEM"
+                            title="CoCAEM 2023"></a>
+                </div>
+
+                <div class="title">
+                    <h1><span>XXXIV</span> Congreso Científico Argentino de Estudiantes de Medicina |
+                        <span>CoCAEM</span>
+                    </h1>
+
+                    <h2>Rosario 2023</h2>
+                </div>
+
+            </div>
+
+            <div class="contain-logo-acres-faces">
+                <a href="http://acresrosario.com" target="_blank"><img src="../src/assets/img/logos/Logo ACRES.png"
+                        alt="Logo de ACRES" title="Asociación Científica Rosarina de Estudiantes de la Salud"></a>
+                <a href="https://www.instagram.com/faces.virtual/" target="_blank"><img
+                        src="../src/assets/img/logos/Logo FACES.png" alt="Logo de FACES"
+                        title="Federación Argentina Científica de Estudiantes de la Salud"></a>
+            </div>
+
+        </div>
+
+        <!-- Menu Total -->
+        <div class="menu-container">
+
+            <!-- Menu Mobile -->
+            <input type="checkbox" name="menu-btn" id="menu-btn" class="menu-btn">
+            <label for="menu-btn" class="menu-btn-label"></label>
+
+            <div class="mobile">
+                <div class="content-menu-mob">
+
+                    <ul class="menu-list-mob">
+                        <li><a href="../#inicio">Início</a></li>
+                        <li><a href="#moverse">Moverse</a></li>
+                        <li><a href="#referencias">Referencias</a></li>
+                        <li><a href="#cronograma">Cronograma</a></li>
+                        <li><a href="#sponsors">Sponsors</a></li>
+
+                    </ul>
+
+                </div>
+            </div>
+
+            <!-- Menu Web -->
+            <nav class="menu">
+                <ul class="menu-list">
+                    <li><a href="../#inicio">Início</a></li>
+                    <li><a href="#moverse">Moverse</a></li>
+                    <li><a href="#map">Referencias</a></li>
+                    <li><a href="#cronograma">Cronograma</a></li>
+                    <li><a href="#sponsors">Sponsors</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+    </header>
+
+    <main class="contain-all">
+        <section class="welcome-screen">
+            <div class="welcome-content">
+                <h2><b>Bienvenidos al</b></h2>
+                <h1><b style="font-family: 'Montserrat', sans;">XXXIV</b> Congreso Científico Argentino de Estudiantes de Medicina.</h1>
+                <h3 style="margin-top: 16px; margin-bottom: 16px;">Rosario 2023</h3>
+                <p>El Congreso Científico más grande del país organizado por Estudiantes.</p>
+            </div>
+        </section>
+
+        <section class="instagrameable-info" id="moverse">
+            <p style="text-align: center;"> A continuación, te dejamos
+                recomendaciones que creemos van a ser de
+                ayuda para que puedas moverte tranquilx
+                por la ciudad de Rosario:
+            </p>
+            <div class="info-section">
+                <div class="info-text">
+                    <h3>Colectivos</h3>
+                    <p>Te recomendamos que te bajes la app <b>"Movi"</b>, en la
+                        misma vas a encontrar toda la información necesaria
+                        sobre líneas, colectivos, recorridos, horarios y mucho
+                        más. Los colectivos funcionan con <b>SUBE</b> y actualmente
+                        tienen un costo de <b>$185</b>.</p>
+                </div>
+                <div class="img-info-container">
+                    <img src="./src/assets/img/moverse/moviLogo.png" alt="Movi">
+                </div>
+            </div>
+
+            <div class="info-section">
+                <div class="info-text">
+                    <h3>Taxis</h3>
+                    <p>En la app <b>"Movi"</b> vas a encontrar una sección
+                        denominada "movi taxi" donde puedes pedirte un coche. </p>
+                    <p>
+                        Si deseas sentirte más segura, te recomendamos la app <b>"she taxi"</b>, manejada <b>exclusivamente por mujeres</b>.
+                    </p>
+                    </p>
+                    <p>
+                        En la ciudad de Rosario también funcionan <b>Uber y Cabify</b>.</p>
+                    </p>
+                </div>
+                <div class="img-info-container" id="shetaxi">
+                    <img src="./src/assets/img/moverse/shetaxi.jpg" alt="SheTaxi">
+                </div>
+            </div>
+
+            <div class="info-section">
+                <div class="info-text">
+                    <h3>Comida</h3>
+                    <p>Sabemos que siempre preferimos la comida rápida y más
+                        en este tipo de eventos, por lo que conseguimos un <b>15% de
+                            descuento</b> presentando tu cucarda en cualquier comida del
+                        día en el predio <b>"Vía Vieja"</b> (a una cuadra de la facultad).</p>
+                </div>
+                <div class="img-info-container" id="viavieja">
+                    <img src="./src/assets/img/moverse/ViaVieja.jpg" alt="Via Vieja">
+                </div>
+            </div>
+
+            <div class="info-section">
+                <div class="info-text">
+                    <h3>Turismo</h3>
+                    <p>Desde el comité organizador tenemos una amplia
+                        propuesta turística para presentarte. </p>
+                        
+                    <p> De todos modos, si los horarios o las actividades no te convencen,
+                        bájate la app <b>"Rosario Turismo"</b> para enterarte a
+                        dónde ir y las novedades.</p>
+                </div>
+                <div class="img-info-container" id="turismo">
+                    <img src="./src/assets/img/moverse/enteturistico.jpg" alt="Ente Turístico Rosario">
+                </div>
+            </div>
+        </section>
+
+        <!-- Enlaces a Instagram y hashtags -->
+        <div class="instagram-links">
+            <a href="https://www.instagram.com/cocaem.rosario" target="_blank">Síguenos en Instagram</a>
+        </div>
+
+        <h3 id="referencias" style="margin-top: 30px;">Referencias</h3>
+        <div id="map" style="width: 100%; height: 280px; margin-top: 20px; margin-bottom: 20px"></div>
+
+        <div class="referencias">
+            <ol>
+                <li>
+                    <strong>Av. Francia y Santa Fe:</strong>
+                    Facultad de Ciencias Medicas (FCM). En dónde se realizará el <span>CoCAEM 2023</span>.
+                </li>
+                <li>
+                    <strong>Vía Vieja y Mercado del Patio:</strong>
+                    Patios gastronómicos con descuentos en
+                    todas las comidas. Lugar donde realizaremos el <span>CoCultura</span>.
+                </li>
+                <li>
+                    <strong>Terminal de Ómnibus "Mariano Moreno".</strong>
+                </li>
+                <li>
+                    <strong>Esquina de: Córdoba y Av. Francia:</strong>
+                    Importante ubicación, un gran número de líneas de colectivo que se dirigen hacia el <span>centro de
+                        la ciudad</span> tienen parada aquí.
+                </li>
+                <li><strong>Hospital PÚBLICO del CENTENARIO:</strong> Detrás de la FCM. <span>Guardia 24 hs</span>.</li>
+                <li><strong>Sanatorio PARQUE:</strong> Córdoba y Oroño. <span>Guardia 24 hs</span>.</li>
+                <li><strong>Sanatorio de la Mujer:</strong> San Luis y Pueyrredón. <span>Guardia 24 hs</span>.</li>
+            </ol>
+        </div>
+
+        <div class="cronogramaCompleto" id="cronograma" style="margin-top: 30px;">
+            <h3 style="text-decoration: underline;">Cronograma Completo</h3>
+            <div class="talleres" style="margin-top: 6px;">
+                <h4>Programa de Talleres - CoCAEM 2023</h4>
+                <h5 style="margin-top: 20px;"">Miércoles 25/10</h5>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>10:30 - 11:30h</td>
+                            <td>Metodología de la Investigación en Salud</td>
+                            <td>Mg. Córdoba, Nataly.</td>
+                            <td>Dermatología</td>
+                        </tr>
+                        <tr>
+                            <td>11:30 - 13:00h</td>
+                            <td>Ley de Salud Mental/Trabajadores de la Salud</td>
+                            <td>Lic. Roich Gabriela; <br> Ps. Bonvechi Maria E.</td>
+                            <td>Dermatología</td>
+                        </tr>
+                        <tr>
+                            <td>14:00 - 15:30h</td>
+                            <td>Información del Hemograma y Orina Completos</td>
+                            <td>Dra. Menoyo, Inés</td>
+                            <td>Telemedicina</td>
+                        </tr>
+                        <tr>
+                            <td>14:00 - 15:30h</td>
+                            <td>RCP</td>
+                            <td>Soporte Vital</td>
+                            <td>Dermatología</td>
+                        </tr>
+                        <tr>
+                            <td>17:00 - 18:30h</td>
+                            <td>Taller de Meditación</td>
+                            <td>Gabriela Mainieri</td>
+                            <td>Telemedicina</td>
+                        </tr>
+                        <tr>
+                            <td>18:30 - 20:00h</td>
+                            <td>Casos Clínicos: Taller Interactivo</td>
+                            <td>Cátedra de Semiología</td>
+                            <td>Telemedicina</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h5>Jueves 26/10</h5>
+                <table>
+                    <tr>
+                        <td>8:30 - 10:00h</td>
+                        <td>Información del Hemograma y Orina Completos</td>
+                        <td>Dra. Menoyo, Inés</td>
+                        <td>Sec. Cececap</td>
+                    </tr>
+                    <tr>
+                        <td>10:00 - 11:30h</td>
+                        <td>Diagnóstico por Imágenes en Politrauma</td>
+                        <td>Dra. Carrizo, Zoe - Dra. Stur, Mariela - Dra. Civetta, Julieta</td>
+                        <td>Sec. Cececap</td>
+                    </tr>
+                    <tr>
+                        <td>11:30 - 13:00h</td>
+                        <td>Bioseguridad e Inmunizaciones</td>
+                        <td>Lic. Castelau Rodolfo; <br> Lic. Gonzales Carlos</td>
+                        <td>Sec. Cececap</td>
+                    </tr>
+                    <tr>
+                        <td>14:00 - 15:30h</td>
+                        <td>Taller de Síndromes Coronarios Agudos</td>
+                        <td>Dr. Boschetti Leonel</td>
+                        <td>Sec. Cececap</td>
+                    </tr>
+                </table>
+
+                <h5>Viernes 27/10</h5>
+                <table>
+                    <tr>
+                        <td>8:10 - 10:00h</td>
+                        <td>Información del Hemograma y Orina Completos</td>
+                        <td>Dra. Menoyo, Inés</td>
+                        <td>Telemedicina</td>
+                    </tr>
+                    <tr>
+                        <td>10:00 - 11:30h</td>
+                        <td>Yesos, Férulas e Inmovilizaciones <br> <br> Las Enzimas en el Laboratorio</td>
+                        <td>Dr. Lera, Sergio <br> <br> Dra. Menoyo, Inés</td>
+                        <td>Dermatología <br> <br> Telemedicina</td>
+                    </tr>
+                    <tr>
+                        <td>11:30 - 13:00h</td>
+                        <td>Preparación, Administración de Medicación Endovenosa en Pediatría <br> 
+                            <br>Presentaciones Farmacológicas y Administración de Medicamentos</td>
+                        <td>Lic. Barrientos, Agustina <br> <br> Lic. Gomez, Gaston</td>
+                        <td>Dermatología <br> <br> Telemedicina</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="disertaciones" style="margin-top: 6px;">
+                <h4>Programa de Disertaciones - CoCAEM 2023</h4>
+                <h5 style="margin-top: 20px;">Miércoles 25/10</h5>
+                <table>
+                    <tr>
+                        <td>8 AM</td>
+                        <td colspan="2"><b>Acto de Apertura</b></td>
+                        <td>Anfiteatro Multimedia</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">10:30 - 11:30h</td>
+                        <td>Mesa redonda “Cáncer de mama”</td>
+                        <td>Dra Montenegro, Ma. Belén; <br> Ps Savoini Silvana.</td>
+                        <td>Anfiteatro Multimedia</td>
+                    </tr>
+                    <tr>
+                        <td>¿Qué debo conocer de mi fertilidad ahora que no voy a buscar un embarazo?</td>
+                        <td>Dra Perfumo, Patricia</td>
+                        <td>Anfiteatro Debora Ferrandini</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">11:30 - 13:00h</td>
+                        <td>Mesa redonda: Desentrañando los Rayos de Sol: La Vitamina D y su Impacto en la Salud Humana.</td>
+                        <td>Dr. Brun, Lucas; Dra. Brance Lorena; Dr. Ramirez, Agustin.</td>
+                        <td>Anfiteatro Multimedia</td>
+                    </tr>
+                    <tr>
+                        <td>Salud Mental y trabajo</td>
+                        <td>Ps Ballerini, Alejandra.</td>
+                        <td>Anfiteatro Debora Ferrandini</td>
+                    </tr>
+                    <tr>
+                        <td>Mesa redonda: Sucidio</td>
+                        <td>Dra Lagorio, Silvia Adriana ; Psicóloga Ferreyra, Luciana</td>
+                        <td>Anatomía Patológica</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">14:00 - 15:30h</td>
+                        <td>Mesa redonda: Medicina integrativa.</td>
+                        <td>Dra Achilli, Jorgelina Marisa Edith; Dra Cabrera, Diana; Dra Reyt, Luciana.</td>
+                        <td>Anfiteatro Multimedia</td>
+                    </tr>
+                    <tr>
+                        <td>Paciente receptor de trasplante de órgano sólido en guardia general</td>
+                        <td>Dr Jaurretche, Sebastian.</td>
+                        <td>Anfiteatro Debora Ferrandini</td>
+                    </tr>
+                    <tr>
+                        <td>Enfermedades originadas por la interacción con el medio ambiente</td>
+                        <td>Lic. Lupo, Maela; Bioq. Rigalli, Alfredo; Est. Fenoglio Ignacio, Ezequiel: Est. Vaquero Silvana.</td>
+                        <td>Anfiteatro Central</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">15:30 - 17:00h</td>
+                        <td>Agenda 2030 ONU. Muerte materna significante social de desigual.</td>
+                        <td>Dr. Coscarelli, Enrique.</td>
+                        <td>Anfiteatro Multimedia</td>
+                    </tr>
+                    <tr>
+                        <td>Cáncer: consecuencias psicosociales.</td>
+                        <td>Ps Correa, Maria Fabiana</td>
+                        <td>Anfiteatro Debora Ferrandini</td>
+                    </tr>
+                    <tr>
+                        <td>Alergias alimentarias</td>
+                        <td>Dra. Sarraquigne, Paula.</td>
+                        <td>Anfiteatro Central</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">17:00 - 18:30h</td>
+                        <td>Mesa redonda: Medicina estética.</td>
+                        <td>Ps. Vila Ortiz, Julieta; Ps, Galeazzo, Pablo; Tc. Reis, Mayara; Dra. Arande, Renata. Lic. Castellanos, Maria Florencia.</td>
+                        <td>Anfiteatro Multimedia</td>
+                    </tr>
+                    <tr>
+                        <td>Salud mental en la salud pública</td>
+                        <td>Ps Velzi Diaz, Alberto</td>
+                        <td>Anfiteatro Debora Ferrandini</td>
+                    </tr>
+                    <tr>
+                        <td>El perfil de la enfermera de Cuidados Intensivos Neonatales y pediátricos</td>
+                        <td>Lic. Arimany, Marcela.</td>
+                        <td>Anfiteatro Central</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">18:30 - 20:00h</td>
+                        <td>Alergia a Insectos.</td>
+                        <td>Dr Colella, Mauricio</td>
+                        <td>Anfiteatro Multimedia</td>
+                    </tr>
+                    <tr>
+                        <td>Inteligencia digestiva</td>
+                        <td>Dra Morel, Irina</td>
+                        <td>Anfiteatro Central</td>
+                    </tr>
+                </table>
+
+                <h5>Jueves 26/10</h5>
+                <table>
+                    <tr>
+                        <td rowspan="3">8:30 - 10:00h</td>
+                        <td>“Tecnología 3D en cirugía traumatológica”</td>
+                        <td>Dr. Lera, Sergio.</td>
+                        <td>Anfiteatro Debora Ferrandini</td>
+                    </tr>
+                    <tr>
+                        <td>Trombofilias</td>
+                        <td>Cinara, Luis.</td>
+                        <td>Anfiteatro Multimedia</td>
+                    </tr>
+                    <tr>
+                        <td>El rol del médico especialista en el deporte</td>
+                        <td>Dr. Turco, Martin.</td>
+                        <td>Anatomía Norma</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">10:00 - 11:30h</td>
+                        <td>Bioseguridad e inmunizaciones.</td>
+                        <td>Lic. Castelau Rodolfo</td>
+                        <td>Anfiteatro Debora Ferrandini</td>
+                    </tr>
+                    <tr>
+                        <td>“Un recorrido por la sexualidad del adolescente en los albores del S XXI. ¿Conflicto o placer?”</td>
+                        <td>Dr. Mengarilli, Guillermo.</td>
+                        <td>Anfiteatro Multimedia</td>
+                    </tr>
+                    <tr>
+                        <td>Crisis de los Antibióticos, volviendo a la naturaleza.</td>
+                        <td>Dr Morbidoni, Hector</td>
+                        <td>Anatomía Normal</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">11:30 - 13:00h</td>
+                        <td>Anafilaxia.</td>
+                        <td>Dra. Sarraquigne, Paula.</td>
+                        <td>Anfiteatro Debora Ferrandini</td>
+                    </tr>
+                    <tr>
+                        <td>Medicina regenerativa ósea.</td>
+                        <td>Dra Felman, Sara</td>
+                        <td>Anfiteatro Multimedia</td>
+                    </tr>
+                    <tr>
+                        <td>Mesa redonda: “El Avance, amplitud e importancia de la Medicina del Deporte en la actualidad”</td>
+                        <td>Dr. Turco, Martin; <br> Dr. Bejer, Javier. <br> Ps. Lande, Federico</td>
+                        <td>Anatomía Patológica</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">14:00 - 15:30h</td>
+                        <td>“Cardiopatías Congénitas, una mirada desde el Feto al Adulto”</td>
+                        <td>Dr. Leiva, Rodolfo</td>
+                        <td>Anfiteatro Debora Ferrandini</td>
+                    </tr>
+                    <tr>
+                        <td>“Lepra en el siglo XXI”</td>
+                        <td>Dra. Estrella Veronica; <br> Dr. Lerman, Damian; <br> Dra. Recarte, Monica. <br> Dr. Sialle, Juan Manuel Facundo</td>
+                        <td>Anfiteatro Multimedia</td>
+                    </tr>
+                    <tr>
+                        <td>Mesa redonda: “El uso de pantallas y patologías crónicas en infancias”</td>
+                        <td>Dra. Bonetto Virginia; <br> Ps. Augsburger, Ana Cecilia; <br> Lic. Romani, Yanina</td>
+                        <td>Anfiteatro Central</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">15:30 - 17:00h</td>
+                        <td>Manejo clínico del paciente con adenopatías - Paciente con pérdida de peso involuntaria</td>
+                        <td>Dr. Consiglio, Francisco.</td>
+                        <td>Anfiteatro Debora Ferrandini</td>
+                    </tr>
+                    <tr>
+                        <td>Desarrollo cognitivo en la niñez: estudios en clave socioconstructivista</td>
+                        <td>Dra. Salsa, Analia</td>
+                        <td>Anfiteatro Multimedia</td>
+                    </tr>
+                    <tr>
+                        <td>“Nuevas tecnologías e inteligencia artificial en medicina”</td>
+                        <td>Dr Acharta, Federico</td>
+                        <td>Anfiteatro Central</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">17:00 - 18:30h</td>
+                        <td>Mesa redonda: Medicina estética.</td>
+                        <td>Ps. Vila Ortiz, Julieta; <br> Ps. Galeazzo, Pablo; <br> Tc. Reis, Mayara; <br> Dra. Arande, Renata; Lic. Castellanos, Maria Florencia</td>
+                        <td>Anfiteatro Multimedia</td>
+                    </tr>
+                    <tr>
+                        <td>Salud mental en la salud pública</td>
+                        <td>Ps Velzi Diaz, Alberto</td>
+                        <td>Anfiteatro Debora Ferrandini</td>
+                    </tr>
+                    <tr>
+                        <td>El perfil de la enfermera de Cuidados Intensivos Neonatales y pediátricos</td>
+                        <td>Lic. Arimany, Marcela.</td>
+                        <td>Anfiteatro central</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">18:30 - 20h</td>
+                        <td>Alergia a Insectos.</td>
+                        <td>Dr Colella, Mauricio</td>
+                        <td>Anfiteatro Multimedia</td>
+                    </tr>
+                    <tr>
+                        <td>Inteligencia digestiva</td>
+                        <td>Dra Morel, Irina</td>
+                        <td>Anfiteatro central</td>
+                    </tr>
+                </table>
+
+                <h5>Viernes 27/10</h5>
+                <table>
+                    <tr>
+                        <td rowspan="3">8:10 - 10:00h</td>
+                        <td>“Consultas frecuentes sobre todo en el primer año de vida.”</td>
+                        <td>Dr. Gabutti, Ernesto.</td>
+                        <td>Anatomía Patológica</td>
+                    </tr>
+                    <tr>
+                        <td>“Complicaciones severas por herpes virus”</td>
+                        <td>Dr. Lupo, Sergio</td>
+                        <td>Anfiteatro Multimedia</td>
+                    </tr>
+                    <tr>
+                        <td>“¿Cómo hacer bebés con la mano”</td>
+                        <td>Dr. Moreno, Ignacio.</td>
+                        <td>Anatomía Normal</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">10:00 - 11:30h</td>
+                        <td>“Enfermedad celíaca: ¿aumenta la prevalencia o la conocemos mejor?”</td>
+                        <td>Dr. Manassero, Luciano</td>
+                        <td>Anatomía Patológica</td>
+                    </tr>
+                    <tr>
+                        <td>Mesa redonda: Neurosífilis</td>
+                        <td>Dr. Jairala, Juan; <br> Dr. Parenti, Pablo; <br> Dra. Gambandé, Telma</td>
+                        <td>Anfiteatro Multimedia</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">11:30 - 13:00h</td>
+                        <td>Tocoginecología hoy, cómo formarse y horizontes laborales</td>
+                        <td>Dr. Mamprim, Ruben</td>
+                        <td>Anatomía Patológica</td>
+                    </tr>
+                    <tr>
+                        <td>“Estrategias de Intervención Comunitaria; un camino para el cuidado integral de la salud”</td>
+                        <td>Dra. Zilli, Maria de los Ángeles.</td>
+                        <td>Anfiteatro Multimedia</td>
+                    </tr>
+                    <tr>
+                        <td>10:00 - 13:00</td>
+                        <td>Charla CTO.</td>
+                        <td>Anatomía Normal</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">14:00 - 15:30h</td>
+                        <td>Estudiar medicina en España.</td>
+                        <td>Goñi Rosia Guillermina.</td>
+                        <td>Anfiteatro Central</td>
+                    </tr>
+                    <tr>
+                        <td>Actualización en hepatitis</td>
+                        <td>Dr. Parenti, Pablo.</td>
+                        <td>Anfiteatro Multimedia</td>
+                    </tr>
+                    <tr>
+                        <td>“Reanimación cardiopulmonar”</td>
+                        <td>Dra. Giorgis, Silvia</td>
+                        <td>Anatomía Normal</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">15:30 - 17:00h</td>
+                        <td>“Flores de Bach”</td>
+                        <td>Lic. Campra, Carolina; <br> Lic. Bertone, Julia; <br> Dra. Scarpatti, Mariel</td>
+                        <td>Anfiteatro Central</td>
+                    </tr>
+                    <tr>
+                        <td>“La medicina: el arte de cuidar”</td>
+                        <td>Dr. Malfante, Pablo.</td>
+                        <td>Anfiteatro Multimedia</td>
+                    </tr>
+                    <tr>
+                        <td>"Tips para Investigar y Publicar"</td>
+                        <td>Dra Navarro, Viviana</td>
+                        <td>Anatomía Normal</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">17:00 - 18:30h</td>
+                        <td>Manifestaciones iniciales de enfermedades autoinmunes</td>
+                        <td>Dra. Lagrutta, Mariana</td>
+                        <td>Anfiteatro Central</td>
+                    </tr>
+                    <tr>
+                        <td>Microbiota en la salud y la enfermedad (lo que se conoce hasta la actualidad)</td>
+                        <td>Dr. Merino, Luis.</td>
+                        <td>Anfiteatro Multimedia</td>
+                    </tr>
+                    <tr>
+                        <td>Segundo ciclo de preguntados</td>
+                        <td>Ciclo básico</td>
+                        <td>Anatomía Normal</td>
+                    </tr>
+                    <tr>
+                        <td>18:30 - 22:00h</td>
+                        <td>Segundo ciclo de preguntados</td>
+                        <td>Ciclo avanzado</td>
+                        <td>Anfiteatro Multimedia</td>
+                    </tr>
+                </table>
+
+                <h5>Sábado 28/10</h5>
+                <table>
+                    <tr>
+                        <td>10:00 - 11:00h</td>
+                        <td>Indicadores e Índices de Producción Científica: Índices de Autores y actores de Impacto</td>
+                        <td>Dr. Yaber, Fabian</td>
+                        <td>Anfiteatro Multimedia</td>
+                    </tr>
+                    <tr>
+                        <td>11:00h</td>
+                        <td colspan="2"><b>Acto de cierre</b></td>
+                        <td>Anfiteatro Multimedia</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <section class="sponsors" id="sponsors">
+            <h3 style="text-decoration: underline;">Nuestros Sponsors</h3>
+            <div class="sponsor-logos">
+                <img src="../src/assets/img/sponsors/ElGatoyLaCajaLOGO.png" alt="El Gato y la Caja" title="El Gato y la Caja">
+                <img src="../src/assets/img/sponsors/Logo-CTO-removebg-preview.png" alt="Grupo CTO" title="Grupo CTO">
+                <img src="../src/assets/img/sponsors/LogoMediplusAzulOscuro-ai.png" alt="MediPlus" title="MediPlus">
+                <img src="../src/assets/img/sponsors/RosarioMateLOGO-removebg-preview.png" alt="Rosario Mate" title="Rosario Mate">
+                <img src="../src/assets/img/sponsors/UNRLogo.png" alt="UNR" title="UNR">
+                <img src="../src/assets/img/sponsors/playaditoLogo.png" alt="Playadito" title="Playadito">
+            </div>
+
+            <div class="fcm-image">
+                <div class="fcm-text">
+                    <p>Un agradecimiento especial a la <span>Facultad de Ciencias Médicas</span> por hacer posible este evento.</p>
+                </div>
+                <img src="./src/assets/img/FCM.jpg" alt="Facultad de Ciencias Médicas">
+                <p id="paraFacultad">Un agradecimiento especial a la <span>Facultad de Ciencias Médicas</span> por hacer posible este evento.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-cocaem">
+            <div class="container-footer">
+
+                <div class="logo-cocaem-footer">
+                    <div class="white-bg-logo">
+                        <a href="#top">
+                            <img src="../src/assets/img/logos/Logo CoCAEM.png" alt="Logo CoCAEM">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contain-ig">
+                    <a href="https://instagram.com/cocaem.rosario" target="_blank" rel="noopener noreferrer">
+                        <img src="../src/assets/img/icons/icon instagram.png" alt="Instagram Icon" id="ig-icon">
+                        <p>@cocaem.rosario</p>
+                    </a>
+                </div>
+
+                <div class="contain-direccion">
+
+                    <div class="dire">
+                        <a href="https://www.google.com/maps/search/Santa+Fe+3102+-+C.P+2000+Rosario/@-32.953808,-60.6401331,15z"
+                            target="_blank" rel="noopener noreferrer">
+                            <img src="../src/assets/img/icons/icon ubic.png" alt="Maps icon">
+                            <p>Santa Fe 3102 - C.P 2000 Rosario</p>
+                        </a>
+                    </div>
+
+                    <div class="dire">
+                        <a href="mailto:cocaemrosario2023@gmail.com" rel="noopener noreferrer">
+                            <img src="../src/assets/img/icons/icon mail.png" alt="Mail icon">
+                            <p>cocaemrosario2023@gmail.com</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contain-logo-footer">
+                    <a href="https://acresrosario.com" target="_blank" rel="noopener noreferrer">
+                        <img src="../src/assets/img/logos/Logo ACRES.png" alt="Logo ACRES">
+                    </a>
+                    <a href="https://www.instagram.com/faces.virtual/" target="_blank">
+                        <img src="../src/assets/img/logos/Logo FACES.png" alt="Logo FACES">
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="container-footer-mobile">
+                <div class="logo-cocaem-footer-mobile">
+                    <div class="white-bg-logo-mobile">
+                        <a href="#top">
+                            <img src="../src/assets/img/logos/Logo CoCAEM.png" alt="Logo CoCAEM">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contain-social-mobile">
+
+                    <div class="dire-mobile">
+                        <a href="https://instagram.com/cocaem.rosario" target="_blank">
+                            <img src="../src/assets/img/icons/icon instagram.png" alt="Instagram Icon" id="ig-icon">
+                        </a>
+                    </div>
+
+
+                    <div class="dire-mobile">
+                        <a href="https://www.google.com/maps/search/Santa+Fe+3102+-+C.P+2000+Rosario/@-32.953808,-60.6401331,15z"
+                            target="_blank">
+                            <img src="../src/assets/img/icons/icon ubic.png" alt="Maps icon" id="ig-icon">
+                        </a>
+                    </div>
+
+                    <div class="dire-mobile">
+                        <a href="mailto:cocaemrosario2023@gmail.com">
+                            <img src="../src/assets/img/icons/icon mail.png" alt="Mail icon" id="mail-icon">
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="logos-mobile">
+                    <div class="contain-logo-footer-mobile">
+                        <a href="https://acresrosario.com" target="_blank" rel="noopener noreferrer">
+                            <img src="../src/assets/img/logos/Logo ACRES.png" alt="Logo ACRES">
+                        </a>
+                        <a href="https://www.instagram.com/faces.virtual/" target="_blank" rel="noopener noreferrer">
+                            <img src="../src/assets/img/logos/Logo FACES.png" alt="Logo FACES">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ggabi">
+                <p>Desarrollado con <span>♥️</span> por <a href="https://ggabi40.github.io/linktree/"
+                        target="_blank">Gabriela
+                        B. Carvalho</a>.</p>
+            </div>
+    </footer>
+
+    <a href="#" class="back-to-top">▶</a>
+
+    <script src="../public/assets/js/bundle.js"></script>
+
+    <script>
+        // Inicializa el mapa
+        var map = L.map('map').setView([-32.945451, -60.661824], 15);
+
+        // Agrega una capa de mapas base
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+        }).addTo(map);
+
+        // Define las ubicaciones de las referencias
+        var referencias = [
+            { nombre: 'Facultad de Ciencias Médicas', latitud: -32.93990556, longitud: -60.6650722, zoom: 15 },
+            { nombre: 'Vía Vieja and Mercado del Patio', latitud: -32.940147, longitud: -60.667772, zoom: 15 },
+            { nombre: 'Terminal de Omnibus "Mariano Moreno"', latitud: -32.9394, longitud: -60.6714, zoom: 17 },
+            { nombre: 'Esquina de Córdoba y Av. Francia', latitud: -32.941449, longitud: -60.665640, zoom: 17 },
+            { nombre: 'Hospital PÚBLICO del Centenario', latitud: -32.938040, longitud: -60.664917, zoom: 17 },
+            { nombre: 'Sanatorio PARQUE', latitud: -32.943661, longitud: -60.653784, zoom: 17 },
+            { nombre: 'Sanatorio de la Mujer', latitud: -32.945660, longitud: -60.657832, zoom: 17 },
+        ];
+
+        // Agrega marcadores para cada referencia
+        referencias.forEach(function (referencia) {
+            L.marker([referencia.latitud, referencia.longitud]).addTo(map)
+                .bindPopup(referencia.nombre)
+                .openPopup()
+                .on('click', function (e) {
+                    map.setView([referencia.latitud, referencia.longitud], referencia.zoom);
+                });
+        });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,224 @@
+.contain-all {
+    background-color: #f0f0f0;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-screen {
+    background-image: url('../../../../src/assets/img/rosario-city/fcm.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    color: #fff;
+    padding: 100px 0;
+}
+
+.welcome-content {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.welcome-content p {
+    font-family: 'Inter', sans;
+}
+
+.welcome-content h2 {
+    font-size: 3.5rem;
+    color: white;
+}
+
+.welcome-content h1 {
+    font-size: 36px;
+    margin-top: 10px;
+}
+
+.welcome-content p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.instagrameable-info {
+    margin-top: 20px;
+}
+
+.info-section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    align-items: center;
+}
+
+.info-section .info-text h3 {
+    text-transform: uppercase;
+}
+
+.img-info-container img {
+    height: 150px;
+    margin-left: 20px;
+}
+
+#shetaxi img, #viavieja img {
+    border-radius: 50% 30%;
+}
+
+#turismo img {
+    height: 100px;
+}
+
+.info-section h3 {
+    color: #3498db;
+    font-size: 18px;
+}
+
+.instagram-links {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.instagram-links a {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.instagram-links a:hover {
+    background-color: #2077c0;
+}
+
+.referencias span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: purple;
+}
+
+.referencias ol li {
+    margin-left: 2%;
+    list-style: decimal;
+    margin-top: 13px;
+    font-size: 1.6rem;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+table {
+    margin-bottom: 30px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+h5 {
+    font-size: 1.6rem;
+}
+/* Estilos para la sección de sponsors */
+.sponsors {
+    margin-top: 20px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.438);
+    padding: 20px;
+    text-align: center;
+}
+
+.sponsors h3 {
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.sponsor-logos img {
+    width: 120px;
+    margin: 10px;
+}
+
+.fcm-image {
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+}
+
+.fcm-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.fcm-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.671);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.fcm-text p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1a1a1a;
+    margin: 0;
+}
+
+.fcm-text span {
+    color: #08126d;
+    font-weight: bold;
+}
+
+#paraFacultad {
+    display: none;
+}
+
+@media screen and (max-width: 560px) {
+    .info-section {
+      grid-template-columns: 1fr;
+    }
+  
+    .img-info-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+    
+    .img-info-container img {
+      height: 120px;
+      margin-left: 0;
+    }
+
+    #turismo img {
+        height: 80px;
+    }
+
+    .sponsor-logos img {
+        width: 80px;
+        margin: 10px;
+    }
+
+    .fcm-text {
+        display: none;
+    }
+
+    #paraFacultad {
+        display: block;
+    }
+
+    #paraFacultad span {
+        color: #08126d;
+        font-weight: bold;
+    }
+  }

@@ -7,6 +7,7 @@ import menu from './modules/menuMob';
 import backtoTop from './modules/backtoTop';
 import modal from './modules/modal';
 
+
 backtoTop();
 menu();
 glider();
